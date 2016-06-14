@@ -5899,6 +5899,12 @@ header {
     font-size: 1.875em;
     margin: 0 20px 0 0; }
 
+@media only screen and (max-width: 480px) {
+  header .navbar-brand img {
+    height: 18px; }
+  header .navbar-toggle {
+    margin: -5px 15px 0 0; } }
+
 footer {
   background-color: #3a3e64;
   text-align: center; }
@@ -6085,14 +6091,28 @@ footer {
     .testimonials .content blockquote {
       font-size: 2.000em; }
     .testimonials .content h5 {
-      font-size: 0.813em; } }
+      font-size: 0.813em; }
+  .works .content {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(232, 69, 69, 0.4); } }
 
 @media only screen and (max-width: 480px) {
+  .hero .jumbotron {
+    height: 550px; }
+  .hero h1 {
+    font-size: 1.875em; }
+  .hero p {
+    font-size: 1.250em; }
   .testimonials .row > div {
-    height: 250px; }
+    height: 300px; }
   .testimonials .content {
     padding-left: 0; }
     .testimonials .content blockquote {
       font-size: 1.563em; } }
+
+@media only screen and (max-width: 380px) {
+  section.hero {
+    padding: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */
