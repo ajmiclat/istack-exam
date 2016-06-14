@@ -1,0 +1,214 @@
+extends layout
+
+block content
+  
+  header
+    nav 
+      .container
+        .navbar-header
+          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false")
+            &#9776;
+          a.navbar-brand(href="#")
+            img(src="images/logo.png")
+        .collapse.navbar-collapse#navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="#") features
+            li
+              a(href="#") works 
+            li
+              a(href="#") our team
+            li
+              a(href="#") testimonials
+            li
+              a(href="#") download
+  
+  #main
+  
+    section.hero
+      .jumbotron
+        .container
+          h1
+            | Your Favorite One Page Multi Purpose Template
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.
+          a.btn.btn-danger 
+            | Find out More
+    
+    section.features
+      .container
+        .row
+          .col-md-4
+            .feature-img.pencil
+            h4 easily customized
+            p
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+          .col-md-4
+            .feature-img.monitor
+            h4 responsive ready
+            p
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+          .col-md-4
+            .feature-img.bulb
+            h4 modern design
+            p
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+        .row
+          .col-md-4
+            .feature-img.atom
+            h4 clean code
+            p
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+          .col-md-4
+            .feature-img.mail
+            h4 ready to ship
+            p
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+          .col-md-4
+            .feature-img.download
+            h4 download for free
+            p
+              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+    
+    .section.works
+      .container-fluid
+        .row
+          .col-md-3.col-sm-6.pg-1
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+          .col-md-3.col-sm-6.pg-2
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+          .col-md-3.col-sm-6.pg-3
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+          .col-md-3.col-sm-6.pg-4
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+        .row
+          .col-md-3.col-sm-6.pg-5
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+          .col-md-3.col-sm-6.pg-6
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+          .col-md-3.col-sm-6.pg-7
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+          .col-md-3.col-sm-6.pg-8
+            .content
+              .text
+                h4 project name
+                p User Interface Design
+    
+    section.team
+      .container
+        .row
+          .col-md-3.col-sm-6.member
+            img(src="images/ruth.jpg" class="img-responsive")
+            h4 Ruth Woods
+            small founder, ceo
+            p 
+              | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+            ul.social-media
+              li
+                a.fb
+              li
+                a.twitter
+              li
+                a.lnkdin
+          .col-md-3.col-sm-6.member
+            img(src="images/timothy.jpg" class="img-responsive")
+            h4 Timothy Reed
+            small co-founder, developer
+            p 
+              | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+            ul.social-media
+              li
+                a.fb
+              li
+                a.twitter
+              li
+                a.lnkdin
+          .col-md-3.col-sm-6.member
+            img(src="images/victoria.jpg" class="img-responsive")
+            h4 Victoria Valdez
+            small ui designer
+            p 
+              | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+            ul.social-media
+              li
+                a.fb
+              li
+                a.twitter
+              li
+                a.lnkdin
+          .col-md-3.col-sm-6.member
+            img(src="images/beverly.jpg" class="img-responsive")
+            h4 Beverly Little
+            small data scientist
+            p 
+              | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+            ul.social-media
+              li
+                a(href="#").fb
+              li
+                a(href="#").twitter
+              li
+                a(href="#").lnkdin
+    
+    section.testimonials
+      .container-fluid
+        .row
+          .col-sm-6
+          .col-sm-6
+            .content
+              blockquote(cite="http://developer.mozilla.org")
+                q Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
+              h5 susan sims, interaction designer at xyz
+    
+    section.download
+      .container
+        h2 Are You Ready to Start? Download Now For Free!
+        h5 Fusce dapibus, tellus ac cursus commodo
+        a.btn.btn-danger 
+          | download here
+  
+  footer
+    .container
+      .row
+        .col-sm-4
+          h5 location
+          p 
+            | 3481 Melrose Place <br/>Beverly Hills, CA 90210
+        .col-sm-4
+          h5 share with love
+          ul.social-media.inverse
+            li
+              a(href="#").fb
+            li
+              a(href="#").twitter
+            li
+              a(href="#").lnkdin
+        .col-sm-4
+          h5  about activebox
+          p
+            | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+    .container-fluid
+      p
+        | Copyright &copy; 2015 ActiveBox. All Rights Reserved <br/>Made with <span class="heart">&hearts;</span> <span>by Kamal Chaneman</span>
+      

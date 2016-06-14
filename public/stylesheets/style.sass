@@ -1,0 +1,175 @@
+@import "./vars"
+@import "./globals"
+@import "./header"
+@import "./footer"
+
+.hero
+  padding: 0
+  background-image: url("../images/hero-bg.jpg")
+  background-position: center
+  background-size: cover
+
+  .jumbotron
+    background: none
+    height: 700px
+    margin-bottom: 0
+    text-align: center
+    color: white
+
+    .container
+      max-width: 900px
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+
+      p
+        color: white
+
+.features
+  .row
+    > div
+      padding: 30px 20px
+      text-align: center
+    .feature-img
+      display: inline-block
+      height: 80px
+      width: 80px
+      background-image: url("../images/sprites.png")
+      &.pencil
+        background-position: 0 0
+      &.monitor
+        background-position: -80px 0
+      &.bulb
+        background-position: -160px 0
+      &.atom
+        background-position: 0 -80px
+      &.mail
+        background-position: -80px -80px
+      &.download
+        background-position: -160px -80px
+
+.works
+  .container-fluid
+    padding: 0
+  .row
+    padding: 0
+    margin: 0
+    > div
+      cursor: pointer
+      padding: 0
+      height: 350px
+      background-position: center
+      background-size: cover
+      text-align: center
+      &:hover .content
+        animation: hoverProject 0.2s ease-out forwards
+      &.pg-1
+        background-image: url("../images/bg-1.jpg")
+      &.pg-2
+        background-image: url("../images/bg-2.jpg")
+      &.pg-3
+        background-image: url("../images/bg-3.jpg")
+      &.pg-4
+        background-image: url("../images/bg-4.jpg")
+      &.pg-5
+        background-image: url("../images/bg-5.jpg")
+      &.pg-6
+        background-image: url("../images/bg-6.jpg")
+      &.pg-7
+        background-image: url("../images/bg-7.jpg")
+      &.pg-8
+        background-image: url("../images/bg-8.jpg")
+  .content
+    visibility: hidden
+    opacity: 0
+    height: 100%
+    color: #fff
+    background-color: $red-hover
+    h4
+      margin-top: 0
+    p
+      color: #fff
+    .text
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+
+.team
+  .member
+    img
+      margin: 0 auto
+    h4
+      margin: 20px 0 10px
+      text-transform: none
+    small
+      text-transform: uppercase
+      color: $red
+      margin-bottom: 20px
+      display: block
+
+.testimonials
+  padding: 0
+  .row
+    > div
+      height: 500px
+      &:first-child
+        background-image: url("../images/testimonial-susan.jpg")
+        background-position: center
+        background-size: cover
+      &:last-child
+        background-color: $purple
+  .content
+    padding-left: 50px
+    max-width: 600px
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    color: white
+    blockquote
+      border: none
+      font-family: $font-cardo
+      font-size: 2.813em
+    h5
+      padding-left: 20px
+
+.download
+  text-align: center
+  h2
+    text-transform: none
+  a
+    margin-top: 30px
+
+@keyframes hoverProject
+  0%
+    visibility: hidden
+    opacity: 0
+  100%
+    visibility: visible
+    opacity: 1
+@media only screen and (max-width: 991px)
+  .team .container
+    text-align: center
+@media only screen and (max-width: 768px)
+  section
+    padding-left: 20px!important
+    padding-right: 20px!important
+  .hero .jumbotron
+    p
+      margin: 20px 0 40px 0
+  .testimonials
+    .row > div
+      height: 330px
+    .content
+      padding-left: 0
+      blockquote
+        font-size: 2.000em
+      h5
+        font-size: 0.813em
+@media only screen and (max-width: 480px)
+  .testimonials
+    .row > div
+      height: 250px
+    .content
+      padding-left: 0
+      blockquote
+        font-size: 1.563em
