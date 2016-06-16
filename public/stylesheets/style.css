@@ -5883,7 +5883,8 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 2; }
   header nav {
     padding: 15px 0; }
   header .navbar-brand {
@@ -5891,13 +5892,19 @@ header {
   header .navbar-nav li a {
     text-transform: uppercase;
     font-size: 0.938em;
-    color: white; }
+    color: white;
+    -webkit-transition: all 0.5s ease; }
     header .navbar-nav li a:hover, header .navbar-nav li a:focus {
       background-color: transparent; }
   header .navbar-toggle {
     color: white;
     font-size: 1.875em;
     margin: 0 20px 0 0; }
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: 0 -15px; } }
 
 @media only screen and (max-width: 480px) {
   header .navbar-brand img {
@@ -5933,6 +5940,9 @@ footer {
     footer .container .row > div {
       padding-top: 20px;
       padding-bottom: 20px; } }
+
+.modal-dialog {
+  z-index: 1041; }
 
 .hero {
   padding: 0;
@@ -6058,6 +6068,15 @@ footer {
       font-size: 2.813em; }
     .testimonials .content h5 {
       padding-left: 20px; }
+    .testimonials .content .carousel-indicators {
+      bottom: -40px; }
+      .testimonials .content .carousel-indicators li {
+        margin-right: 5px;
+        background-color: #755e6e;
+        border-color: #755e6e; }
+        .testimonials .content .carousel-indicators li.active {
+          background-color: white;
+          border-color: white; }
 
 .download {
   text-align: center; }

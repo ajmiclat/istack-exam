@@ -13,15 +13,15 @@ block content
         .collapse.navbar-collapse#navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
-              a(href="#") features
+              a(href="#features") features
             li
-              a(href="#") works 
+              a(href="#works") works 
             li
-              a(href="#") our team
+              a(href="#team") our team
             li
-              a(href="#") testimonials
+              a(href="#testimonials") testimonials
             li
-              a(href="#") download
+              a(href="#download") download
   
   #main
   
@@ -35,7 +35,7 @@ block content
           a.btn.btn-danger 
             | Find out More
     
-    section.features
+    section.features#features
       .container
         .row
           .col-md-4
@@ -70,52 +70,52 @@ block content
             p
               | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
     
-    .section.works
+    .section.works#works
       .container-fluid
         .row
           .col-md-3.col-sm-6.pg-1
-            .content
+            .content(data-img="bg-1.jpg")
               .text
                 h4 project name
                 p User Interface Design
           .col-md-3.col-sm-6.pg-2
-            .content
+            .content(data-img="bg-2.jpg")
               .text
                 h4 project name
                 p User Interface Design
           .col-md-3.col-sm-6.pg-3
-            .content
+            .content(data-img="bg-3.jpg")
               .text
                 h4 project name
                 p User Interface Design
           .col-md-3.col-sm-6.pg-4
-            .content
+            .content(data-img="bg-4.jpg")
               .text
                 h4 project name
                 p User Interface Design
         .row
           .col-md-3.col-sm-6.pg-5
-            .content
+            .content(data-img="bg-5.jpg")
               .text
                 h4 project name
                 p User Interface Design
           .col-md-3.col-sm-6.pg-6
-            .content
+            .content(data-img="bg-6.jpg")
               .text
                 h4 project name
                 p User Interface Design
           .col-md-3.col-sm-6.pg-7
-            .content
+            .content(data-img="bg-7.jpg")
               .text
                 h4 project name
                 p User Interface Design
           .col-md-3.col-sm-6.pg-8
-            .content
+            .content(data-img="bg-8.jpg")
               .text
                 h4 project name
                 p User Interface Design
     
-    section.team
+    section.team#team
       .container
         .row
           .col-md-3.col-sm-6.member
@@ -171,17 +171,34 @@ block content
               li
                 a(href="#").lnkdin
     
-    section.testimonials
+    section.testimonials#testimonials
       .container-fluid
         .row
           .col-sm-6
           .col-sm-6
             .content
-              blockquote(cite="http://developer.mozilla.org")
-                q Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
-              h5 susan sims, interaction designer at xyz
+              .carousel.slide#carousel(data-ride="carousel")
+                
+                .carousel-inner(role="listbox")
+                  .item.active
+                    blockquote(cite="http://developer.mozilla.org")
+                      q Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
+                    h5 susan sims, interaction designer at xyz
+                  .item
+                    blockquote(cite="http://developer.mozilla.org")
+                      q Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
+                    h5 susan sims, interaction designer at xyz
+                  .item
+                    blockquote(cite="http://developer.mozilla.org")
+                      q Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
+                    h5 susan sims, interaction designer at xyz
+                
+                ol.carousel-indicators
+                  li.active(data-target="#carousel" data-slide-to="0")
+                  li(data-target="#carousel" data-slide-to="1")
+                  li(data-target="#carousel" data-slide-to="2")
     
-    section.download
+    section.download#download
       .container
         h2 Are You Ready to Start? Download Now For Free!
         h5 Fusce dapibus, tellus ac cursus commodo
@@ -211,4 +228,20 @@ block content
     .container-fluid
       p
         | Copyright &copy; 2015 ActiveBox. All Rights Reserved <br/>Made with <span class="heart">&hearts;</span> <span>by Kamal Chaneman</span>
+  
+  .modal.fade(tabindex="-1" role="dialog" id="projectModal")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") 
+              | &times;
+          h4 Project Name
+        .modal-body
+          img#projectImage.img-responsive(src="http://placehold.it/800x800")
+          br
+          p
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        .modal-footer
+          button(type="button" class="btn btn-default" data-dismiss="modal") Close
       

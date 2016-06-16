@@ -3,6 +3,9 @@
 @import "./header"
 @import "./footer"
 
+.modal-dialog
+  z-index: 1041
+
 .hero
   padding: 0
   background-image: url("../images/hero-bg.jpg")
@@ -131,6 +134,16 @@
       font-size: 2.813em
     h5
       padding-left: 20px
+
+    .carousel-indicators
+      bottom: -40px
+      li
+        margin-right: 5px
+        background-color: #755e6e
+        border-color: #755e6e
+        &.active
+          background-color: white
+          border-color: white
 
 .download
   text-align: center
